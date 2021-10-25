@@ -1,0 +1,89 @@
+
+/* ハンバーガ―メニューの見た目部分の設定 */
+.hamburger-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  transition: 0.4s;
+  position: relative;
+}
+.hamburger-btn:hover {
+  opacity: 0.5;
+}
+/* ハンバーガーメニューの線の設定（初期の三本線の状態） */
+.hamburger-btn span {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 10px;
+  transition: 0.4s ease-in-out;
+}
+/* 1本目の線の位置 */
+.hamburger-btn span:nth-child(1) {
+  top: 10px;
+}
+/* 2本目の線の位置 */
+.hamburger-btn span:nth-child(2) {
+  top: 20px;
+}
+/* 3本目の線の位置 */
+.hamburger-btn span:nth-child(3) {
+  top: 30px;
+}
+
+// ハンバーガーメニューナビゲーション
+
+#g-nav {
+  position: absolute;
+  padding: 60px 25px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  left: -300px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  transition: .7s;
+}
+
+.g-nav_menu {
+    margin-bottom: 50px;
+
+    li {
+      line-height: 60px;
+      border-top: 1px solid #fff;
+      &:last-child {
+        border-bottom: 1px solid #fff;
+      }
+      a {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .g-nav_sns {
+    line-height: 40px;
+  }
+
+// 各要素にactiveクラスをつけられたあとの動き
+.hamburger-btn.active span:nth-child(1){
+  transform: rotate(-45deg);
+  top: 20px;
+}
+
+.hamburger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3){
+  transform: rotate(45deg);
+  top: 20px;
+}
+
+#g-nav.active {
+  left: 0;
+}

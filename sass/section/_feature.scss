@@ -1,0 +1,73 @@
+@use "../global" as g;
+
+#feature  {
+  max-width: 1208px;
+  margin: 0 auto 60px;
+  padding: 80px 16px 0;
+  h2 {
+    margin: 20px 0 30px;
+    text-align: center;
+  }
+}
+
+// グリッド
+.feature-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  row-gap: 27px;
+  column-gap: 26px;
+  @include g.tab {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+  @include g.sp {
+    display: block;
+  }
+}
+
+// カード内容
+.card {
+  max-width: 100%;
+  box-shadow: 0 0 8px 4px #ccc;
+  @include g.sp {
+    margin-bottom: 26px;
+  }
+
+  &_img {
+    img{
+      width: 100%;
+      aspect-ratio: 3 / 2;
+    }
+  }
+
+  &_contents{
+    padding: 30px;
+    border: 1px solid #ccc;
+  }
+}
+
+.category {
+  font-size: 12px;
+}
+
+.text {
+  margin: 20px 0;
+  font-size: 14.4px;
+}
+
+.date {
+  text-align: right;
+  font-size: 12px;
+}
+
+// アニメーション
+.fadein {
+  opacity : 0;
+  transform : translate(0, 30px);
+  transition : 1.5s;
+}
+.fadein.scrollin {
+  opacity : 1;
+  transform : translate(0, 0);
+}

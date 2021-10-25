@@ -1,0 +1,751 @@
+@charset "UTF-8";
+/*! destyle.css v3.0.0 | MIT License | https://github.com/nicolas-cusan/destyle.css */
+/* Reset box-model and set borders */
+/* ============================================ */
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-tap-highlight-color: transparent;
+  /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: inherit;
+  /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none;
+  /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit;
+  /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px;
+  /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit;
+  /* 1 */
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+main {
+  padding-top: 80px;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+@media screen and (max-width: 752px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  background-color: #fff;
+  z-index: 10;
+}
+@media screen and (max-width: 752px) {
+  .header {
+    padding: 20px;
+  }
+}
+.header_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+@media screen and (max-width: 752px) {
+  .title h1 {
+    font-size: 24px;
+  }
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 752px) {
+  #video {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+#pick-up {
+  padding-top: 80px;
+}
+#pick-up h2 {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+@media screen and (max-width: 752px) {
+  #pick-up h2 {
+    margin-top: 0;
+  }
+}
+
+.slider img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  padding: 0 30px;
+}
+
+#feature {
+  max-width: 1208px;
+  margin: 0 auto 60px;
+  padding: 80px 16px 0;
+}
+#feature h2 {
+  margin: 20px 0 30px;
+  text-align: center;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto auto auto;
+  row-gap: 27px;
+  -webkit-column-gap: 26px;
+     -moz-column-gap: 26px;
+          column-gap: 26px;
+}
+@media screen and (max-width: 983px) {
+  .feature-grid {
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 752px) {
+  .feature-grid {
+    display: block;
+  }
+}
+
+.card {
+  max-width: 100%;
+  -webkit-box-shadow: 0 0 8px 4px #ccc;
+          box-shadow: 0 0 8px 4px #ccc;
+}
+@media screen and (max-width: 752px) {
+  .card {
+    margin-bottom: 26px;
+  }
+}
+.card_img img {
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.card_contents {
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+.category {
+  font-size: 12px;
+}
+
+.text {
+  margin: 20px 0;
+  font-size: 14.4px;
+}
+
+.date {
+  text-align: right;
+  font-size: 12px;
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+#contact {
+  background-color: #000;
+  color: #fff;
+  padding-top: 50px;
+}
+@media screen and (max-width: 752px) {
+  #contact {
+    padding-top: 80px;
+  }
+}
+#contact h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-wrapper {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 16px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media screen and (max-width: 752px) {
+  .contact-wrapper {
+    display: block;
+    padding-bottom: 60px;
+  }
+}
+
+.contact-text {
+  width: 45%;
+}
+@media screen and (max-width: 752px) {
+  .contact-text {
+    width: 100%;
+  }
+}
+.contact-text p {
+  font-size: 14.4px;
+  margin-bottom: 30px;
+}
+
+.form {
+  width: 45%;
+}
+@media screen and (max-width: 752px) {
+  .form {
+    width: 100%;
+  }
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  width: 40%;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+}
+@media screen and (max-width: 752px) {
+  .submit-btn {
+    width: 100%;
+  }
+}
+.submit-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+/* ハンバーガ―メニューの見た目部分の設定 */
+.hamburger-btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  right: 0;
+  z-index: 30;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  position: relative;
+}
+
+.hamburger-btn:hover {
+  opacity: 0.5;
+}
+
+/* ハンバーガーメニューの線の設定（初期の三本線の状態） */
+.hamburger-btn span {
+  width: 30px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 10px;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+/* 1本目の線の位置 */
+.hamburger-btn span:nth-child(1) {
+  top: 10px;
+}
+
+/* 2本目の線の位置 */
+.hamburger-btn span:nth-child(2) {
+  top: 20px;
+}
+
+/* 3本目の線の位置 */
+.hamburger-btn span:nth-child(3) {
+  top: 30px;
+}
+
+#g-nav {
+  position: absolute;
+  padding: 60px 25px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  left: -300px;
+  height: 100vh;
+  background-color: #000;
+  color: #fff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.g-nav_menu {
+  margin-bottom: 50px;
+}
+.g-nav_menu li {
+  line-height: 60px;
+  border-top: 1px solid #fff;
+}
+.g-nav_menu li:last-child {
+  border-bottom: 1px solid #fff;
+}
+.g-nav_menu li a {
+  cursor: pointer;
+}
+
+.g-nav_sns {
+  line-height: 40px;
+}
+
+.hamburger-btn.active span:nth-child(1) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 20px;
+}
+
+.hamburger-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-btn.active span:nth-child(3) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 20px;
+}
+
+#g-nav.active {
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

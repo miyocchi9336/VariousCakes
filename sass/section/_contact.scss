@@ -1,0 +1,77 @@
+@use "../global" as g;
+
+#contact {
+  background-color: #000;
+  color: #fff;
+  padding-top: 50px;
+  @include g.sp {
+    padding-top: 80px;
+  }
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+}
+
+.contact-wrapper {
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 16px 30px;
+  display: flex;
+  justify-content: space-between;
+  @include g.sp {
+    display: block;
+    padding-bottom: 60px;
+  }
+}
+
+.contact-text {
+  width: 45%;
+  @include g.sp{
+    width: 100%;
+  }
+  p {
+    font-size: 14.4px;
+    margin-bottom: 30px;
+  }
+}
+
+.form {
+  width: 45%;
+  @include g.sp{
+    width: 100%;
+  }
+}
+
+input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  width: 40%;
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  @include g.sp{
+    width: 100%;
+  }
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}

@@ -1,0 +1,10 @@
+@use "../global" as g;
+
+#video {
+  width: 100%;
+  height: auto;
+  @include g.sp {
+    height: 100vh;
+    object-fit: cover;
+  }
+}
